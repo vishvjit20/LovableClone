@@ -7,7 +7,6 @@ import lombok.experimental.FieldDefaults;
 
 import java.time.Instant;
 
-
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -21,5 +20,6 @@ public class ChatSession {
 
     Instant createdAt;
     Instant updatedAt;
-    Instant deletedAt; // soft delete
+
+    Instant deletedAt; //soft delete
 }

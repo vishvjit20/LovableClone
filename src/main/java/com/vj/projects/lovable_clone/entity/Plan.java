@@ -1,6 +1,5 @@
 package com.vj.projects.lovable_clone.entity;
 
-
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,8 +17,8 @@ public class Plan {
     String stripePriceId;
     Integer maxProjects;
     Integer maxTokensPerDay;
-    Integer maxPreviews;
-    Boolean unlimitedAi;
+    Integer maxPreviews; //max number of previews allowed per plan
+    Boolean unlimitedAi; //unlimited access to LLM, ignore maxTokensPerDay if true
 
     Boolean active;
 }

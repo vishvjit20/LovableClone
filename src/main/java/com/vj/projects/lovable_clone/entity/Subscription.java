@@ -1,6 +1,5 @@
 package com.vj.projects.lovable_clone.entity;
 
-
 import com.vj.projects.lovable_clone.enums.SubscriptionStatus;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -17,7 +16,6 @@ public class Subscription {
     Long id;
 
     User user;
-
     Plan plan;
 
     SubscriptionStatus status;
@@ -27,9 +25,8 @@ public class Subscription {
 
     Instant currentPeriodStart;
     Instant currentPeriodEnd;
-    Boolean cancelAtPeriodEnd;
+    Boolean cancelAtPeriodEnd = false;
 
     Instant createdAt;
     Instant updatedAt;
-
 }
